@@ -10,11 +10,12 @@
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
-	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
 	<context:component-scan base-package="md.utm.entity" />
-	
+
 
 </beans>

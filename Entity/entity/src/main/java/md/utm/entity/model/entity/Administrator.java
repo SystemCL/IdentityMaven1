@@ -1,3 +1,4 @@
+
 package com.entity.pkg;
 
 public class Administrator extends UserAc {

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class UserAc implements Person {
 	
-	public int idAccunt;
+	public Integer idAccount;
 	public String username;
 	public String password;
 	
@@ -32,7 +32,19 @@ public class UserAc implements Person {
 		return false;
 	}
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	public Integer getId() {
+		return id;
+	}
 	
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
 	
 
 	@Override
